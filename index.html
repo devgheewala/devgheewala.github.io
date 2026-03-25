@@ -115,15 +115,6 @@ h2{font-family:var(--display);font-size:clamp(2rem,4vw,3rem);font-weight:800;lin
 .pcard-name{font-family:var(--display);font-size:1.2rem;font-weight:700;margin-bottom:.6rem;color:#111}
 .pcard-desc{font-size:.87rem;color:var(--muted2);line-height:1.72;flex:1}
 .pcard-foot{display:flex;justify-content:flex-start;align-items:center;margin-top:1.4rem;padding-top:1.3rem;border-top:1px solid var(--border);gap:1rem}
-.plink{font-family:var(--mono);font-size:.62rem;color:#111;text-decoration:none;letter-spacing:.08em;text-transform:uppercase;display:flex;align-items:center;gap:.4rem;transition:gap .2s}
-.plink:hover{gap:.7rem}
-
-/* CODE PREVIEW */
-.code-block{background:#0a0a0a;border-radius:10px;padding:1.2rem 1.5rem;margin-top:1.2rem;font-family:var(--mono);font-size:.7rem;color:#a3e635;line-height:1.7;overflow-x:auto;border:1px solid rgba(255,255,255,.06)}
-.code-block .cm{color:#555}
-.code-block .ck{color:#7dd3fc}
-.code-block .cs{color:#fde68a}
-.code-block .cn{color:#c4b5fd}
 
 /* EDUCATION */
 .education{background:#fff}
@@ -142,7 +133,7 @@ h2{font-family:var(--display);font-size:clamp(2rem,4vw,3rem);font-weight:800;lin
 .contact{background:var(--bg2);text-align:center;padding:8rem 3.5rem;border-top:1px solid var(--border)}
 .contact-inner{max-width:600px;margin:0 auto}
 .contact-sub{font-size:1rem;color:var(--muted2);line-height:1.78;margin:1.5rem 0 2rem}
-.contact-email{font-family:var(--display);font-size:clamp(1.3rem,3vw,2.3rem);font-weight:800;color:#111;text-decoration:none;display:block;margin-bottom:2.5rem;transition:color .2s;position:relative;word-break:break-all}
+.contact-email{font-family:var(--display);font-size:clamp(1rem,2vw,1.4rem);font-weight:800;color:#111;text-decoration:none;display:block;margin-bottom:2.5rem;transition:color .2s;position:relative;word-break:break-all}
 .contact-email::after{content:'';position:absolute;bottom:-3px;left:50%;transform:translateX(-50%);width:0;height:2px;background:#111;transition:width .3s}
 .contact-email:hover::after{width:100%}
 .socials{display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap}
@@ -360,18 +351,7 @@ footer{background:#fff;padding:1.8rem 3.5rem;border-top:1px solid var(--border);
       <div class="pcard-icon">✈️</div>
       <div class="pcard-name">Airline Reservation System</div>
       <div class="pcard-desc">Full CLI airline booking system with customer registration, 3-class ticket pricing (First/Business/Economy), luggage charges, billing, and cancellations — all persisted in MySQL with JOIN queries across two tables.</div>
-      <div class="code-block">
-<span class="cm"># Book a ticket</span>
-<span class="ck">def</span> <span class="cn">book_ticket</span>():
-  <span class="ck">class_name</span>, price = CLASSES[choice]
-  total = price * passengers
-  luggage = kg * <span class="cs">100</span>
-  <span class="cm"># → INSERT INTO tkt ...</span>
-      </div>
       <div class="tags" style="margin-top:1rem"><span class="tag">Python</span><span class="tag">MySQL</span><span class="tag">CLI</span><span class="tag">OOP</span></div>
-      <div class="pcard-foot">
-        <a class="plink" href="https://github.com/devgheewala" target="_blank">GitHub →</a>
-      </div>
     </div>
 
     <!-- Bank -->
@@ -379,17 +359,7 @@ footer{background:#fff;padding:1.8rem 3.5rem;border-top:1px solid var(--border);
       <div class="pcard-icon">🏦</div>
       <div class="pcard-name">Bank Management System</div>
       <div class="pcard-desc">Menu-driven Python + MySQL app handling account creation, deposits, withdrawals, and balance tracking. Features input validation, clean error handling, and full database persistence across sessions.</div>
-      <div class="code-block">
-<span class="cm"># Withdraw funds</span>
-<span class="ck">def</span> <span class="cn">withdraw</span>(acc, amt):
-  <span class="ck">if</span> balance >= amt:
-    cursor.execute(<span class="cs">"UPDATE accounts..."</span>)
-    db.commit()
-      </div>
       <div class="tags" style="margin-top:1rem"><span class="tag">Python</span><span class="tag">MySQL</span><span class="tag">CRUD</span><span class="tag">CLI</span></div>
-      <div class="pcard-foot">
-        <a class="plink" href="https://github.com/devgheewala" target="_blank">GitHub →</a>
-      </div>
     </div>
 
     <!-- Java OOP -->
@@ -397,14 +367,6 @@ footer{background:#fff;padding:1.8rem 3.5rem;border-top:1px solid var(--border);
       <div class="pcard-icon">☕</div>
       <div class="pcard-name">Java OOP Projects</div>
       <div class="pcard-desc">A collection of Java programs built through structured coursework — covering inheritance, encapsulation, polymorphism, Scanner/InputStreamReader input handling, and real-world OOP design patterns.</div>
-      <div class="code-block">
-<span class="cm">// Polymorphism example</span>
-<span class="ck">class</span> <span class="cn">SavingsAccount</span>
-  <span class="ck">extends</span> BankAccount {
-  <span class="ck">double</span> interestRate;
-  <span class="cm">// overrides withdraw()</span>
-}
-      </div>
       <div class="tags" style="margin-top:1rem"><span class="tag">Java</span><span class="tag">OOP</span><span class="tag">Inheritance</span><span class="tag">Encapsulation</span></div>
       <div class="pcard-foot">
         <span style="font-family:var(--mono);font-size:.62rem;color:var(--muted);letter-spacing:.06em">Academic project</span>
@@ -456,9 +418,6 @@ footer{background:#fff;padding:1.8rem 3.5rem;border-top:1px solid var(--border);
     <div class="socials rv">
       <a href="https://github.com/devgheewala" target="_blank" class="slink">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>GitHub
-      </a>
-      <a href="tel:+16103347088" class="slink">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 012 1.18 2 2 0 014 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>+1 (610) 334-7088
       </a>
       <a href="mailto:devchiraggheewala@gmail.com" class="slink">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Email
